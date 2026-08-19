@@ -1,51 +1,242 @@
-<section>
-    <h2>Projects</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farag | Python Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #0d0f12;
+            color: #e2e8f0;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            text-align: center;
+            padding: 80px 20px;
+            background: radial-gradient(circle at top, #2e3494 0%, #0d0f12 70%);
+            border-bottom: 1px solid #1e293b;
+        }
+        header h1 {
+            font-size: 52px;
+            margin: 0 0 12px 0;
+            font-weight: 700;
+            letter-spacing: -1px;
+            background: linear-gradient(135deg, #ffffff, #8f94fb);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        header p {
+            font-size: 18px;
+            color: #94a3b8;
+            margin: 0;
+            font-weight: 400;
+        }
+        main {
+            padding: 40px 20px;
+            max-width: 850px;
+            margin: auto;
+        }
+        section {
+            margin-bottom: 50px;
+        }
+        h2 {
+            font-size: 26px;
+            margin-bottom: 20px;
+            color: #8f94fb;
+            letter-spacing: -0.5px;
+            border-bottom: 2px solid #1e293b;
+            padding-bottom: 8px;
+        }
+        .project {
+            background: #161a22;
+            padding: 24px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #222734;
+            transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+        }
+        .project:hover {
+            transform: translateY(-4px);
+            border-color: #4e8cff;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+        }
+        .project h3 {
+            margin: 0 0 10px 0;
+            color: #60a5fa;
+            font-size: 20px;
+        }
+        .project p {
+            margin: 0 0 15px 0;
+            color: #cbd5e1;
+        }
+        .project-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid #222734;
+        }
+        .tech-stack {
+            font-size: 14px;
+            color: #94a3b8;
+        }
+        .tech-stack strong {
+            color: #e2e8f0;
+        }
+        .btn-link {
+            display: inline-block;
+            padding: 6px 14px;
+            background: #1e293b;
+            color: #60a5fa;
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: background 0.2s ease, color 0.2s ease;
+        }
+        .btn-link:hover {
+            background: #4e8cff;
+            color: #ffffff;
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .skill {
+            background: #161a22;
+            color: #94a3b8;
+            padding: 8px 16px;
+            border-radius: 20px;
+            border: 1px solid #222734;
+            font-size: 14px;
+            font-weight: 500;
+            transition: color 0.2s, border-color 0.2s;
+        }
+        .skill:hover {
+            color: #60a5fa;
+            border-color: #60a5fa;
+        }
+        .contact-card p {
+            margin: 10px 0;
+            font-size: 16px;
+        }
+        a {
+            color: #60a5fa;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            background: #090a0f;
+            border-top: 1px solid #1e293b;
+            color: #64748b;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
 
-    <div class="project">
-        <h3>🎨 Filter Image App</h3>
-        <p>Streamlit app that removes background, merges person with custom background, applies filters, and exports the final image.</p>
-        <div class="project-footer">
-            <span class="tech-stack"><strong>Tech:</strong> Python, Streamlit, Rembg, PIL, NumPy</span>
-            <a href="https://image-edit-frhnuyepirsrxct8hhtxm2.streamlit.app" class="btn-link">View Code &rarr;</a>
+<header>
+    <h1>Farag</h1>
+    <p>Python Developer — Streamlit • MediaPipe • OpenCV • AI Tools</p>
+</header>
+
+<main>
+    <section>
+        <h2>Projects</h2>
+
+        <div class="project">
+            <h3>🎨 Filter Image App</h3>
+            <p>Streamlit app that removes background, merges person with custom background, applies filters, and exports the final image.</p>
+            <div class="project-footer">
+                <span class="tech-stack"><strong>Tech:</strong> Python, Streamlit, Rembg, PIL, NumPy</span>
+                <a href="https://image-edit-frhnuyepirsrxct8hhtxm2.streamlit.app" class="btn-link">View Code &rarr;</a>
+            </div>
         </div>
-    </div>
 
-    <div class="project">
-        <h3>✋ Hand Gesture Translator</h3>
-        <p>Real‑time MediaPipe + OpenCV app that detects hand landmarks and translates finger positions into custom signs.</p>
-        <div class="project-footer">
-            <span class="tech-stack"><strong>Tech:</strong> Python, MediaPipe Hands, OpenCV</span>
-            <a href="#" class="btn-link">View Code &rarr;</a>
+        <div class="project">
+            <h3>✋ Hand Gesture Translator</h3>
+            <p>Real‑time MediaPipe + OpenCV app that detects hand landmarks and translates finger positions into custom signs.</p>
+            <div class="project-footer">
+                <span class="tech-stack"><strong>Tech:</strong> Python, MediaPipe Hands, OpenCV</span>
+                <a href="#" class="btn-link">View Code &rarr;</a>
+            </div>
         </div>
-    </div>
 
-    <div class="project">
-        <h3>🔊 Text‑to‑Speech App</h3>
-        <p>Streamlit app that converts text into natural voices using Microsoft Edge‑TTS with Arabic & English voices.</p>
-        <div class="project-footer">
-            <span class="tech-stack"><strong>Tech:</strong> Python, Streamlit, Edge‑TTS</span>
-            <a href="https://text-to-audio-jvmegqlmz3jjdot5zjqbqv.streamlit.app" class="btn-link">View Code &rarr;</a>
+        <div class="project">
+            <h3>🔊 Text‑to‑Speech App</h3>
+            <p>Streamlit app that converts text into natural voices using Microsoft Edge‑TTS with Arabic & English voices.</p>
+            <div class="project-footer">
+                <span class="tech-stack"><strong>Tech:</strong> Python, Streamlit, Edge‑TTS</span>
+                <a href="https://text-to-audio-jvmegqlmz3jjdot5zjqbqv.streamlit.app" class="btn-link">View Code &rarr;</a>
+            </div>
         </div>
+        <div class="project">
+    <h3>🌐 Translator App</h3>
+    <p>Streamlit app that translates text between multiple languages using GoogleTranslator with a clean UI and fast processing.</p>
+    <div class="project-footer">
+        <span class="tech-stack"><strong>Tech:</strong> Python, Streamlit, GoogleTranslator API</span>
+        <a href="#" class="btn-link">View Code &rarr;</a>
     </div>
+</div>
 
-    <!-- ⭐ NEW PROJECT ADDED HERE ⭐ -->
-    <div class="project">
-        <h3>🌐 Translator App</h3>
-        <p>Streamlit app that translates text between multiple languages using GoogleTranslator with a clean UI and fast processing.</p>
-        <div class="project-footer">
-            <span class="tech-stack"><strong>Tech:</strong> Python, Streamlit, GoogleTranslator API</span>
-            <a href="#" class="btn-link">View Code &rarr;</a>
+
+        <div class="project">
+            <h3>📝 AI Text & PDF Summarizer</h3>
+            <p>Streamlit app powered by Groq Llama-3.3-70B that extracts text from uploaded PDFs, auto-detects language, generates kid-friendly summaries with audio read-aloud (TTS), and enables summary downloads.</p>
+            <div class="project-footer">
+                <span class="tech-stack"><strong>Tech:</strong> Python, Streamlit, Groq API, PyPDF2, gTTS</span>
+                <a href="https://summurizer-uansjjkryvverryphfxip5.streamlit.app" class="btn-link">View Code &rarr;</a>
+            </div>
         </div>
-    </div>
-    <!-- ⭐ END NEW PROJECT ⭐ -->
+    </section>
 
-    <div class="project">
-        <h3>📝 AI Text & PDF Summarizer</h3>
-        <p>Streamlit app powered by Groq Llama-3.3-70B that extracts text from uploaded PDFs, auto-detects language, generates kid-friendly summaries with audio read-aloud (TTS), and enables summary downloads.</p>
-        <div class="project-footer">
-            <span class="tech-stack"><strong>Tech:</strong> Python, Streamlit, Groq API, PyPDF2, gTTS</span>
-            <a href="https://summurizer-uansjjkryvverryphfxip5.streamlit.app" class="btn-link">View Code &rarr;</a>
+    <section>
+        <h2>About Me</h2>
+        <p>I build interactive AI applications using Python. I focus on computer vision, background removal, gesture recognition, LLM integration, and text-to-speech tools built with Streamlit for rapid deployment.</p>
+    </section>
+
+    <section>
+        <h2>Skills</h2>
+        <div class="skills">
+            <div class="skill">Python</div>
+            <div class="skill">Streamlit</div>
+            <div class="skill">Groq / LLMs</div>
+            <div class="skill">OpenCV</div>
+            <div class="skill">MediaPipe</div>
+            <div class="skill">Pillow</div>
+            <div class="skill">Async / TTS</div>
+            <div class="skill">HTML / CSS</div>
+            <div class="skill">Git & GitHub</div>
         </div>
-    </div>
+    </section>
 
-</section>
+    <section class="contact-card">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+        <p>GitHub: <a href="https://github.com" target="_blank" rel="noopener noreferrer">github.com/your-username</a></p>
+    </section>
+</main>
+
+<footer>
+    © 2026 my projects showroom — Portfolio
+</footer>
+
+</body>
+</html>
